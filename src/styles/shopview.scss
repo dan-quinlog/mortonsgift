@@ -1,0 +1,33 @@
+.shopview {
+  &__catagories {
+    display: none;
+  }
+  &__catagorydetails {
+    display: none;
+  }
+  &__carousel {
+
+  }
+}
+
+.project-carousel {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.projectcard {
+  width: 75%;
+  border: 3px solid blue;
+  border-radius: 10px;
+  margin: 20px;
+  &__id {
+
+  }
+  &__title {
+
+  }
+  &__content {
+
+  }
+}

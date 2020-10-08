@@ -1,0 +1,66 @@
+.navbar {
+  display: flex;
+  justify-content: flex-end;
+  background-color: black;
+  height: 70px;
+
+  &__logo {
+    background-color: orange;
+    height: 50px;
+    width: 50px;
+    margin: 10px;
+  }
+  &__spacer {
+    flex-grow: 1;
+  }
+  &__links {
+    position: absolute;
+    top: 70px;
+    left: 0px;
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    background-color: black;
+    &__link {
+      height: 50px;
+      margin: 10px;
+      background-color: white;
+      &:hover {
+        background-color: whitesmoke;
+      }
+    }
+  }
+  &__hidden {
+    display: none;
+  }
+  &__burgerbutton {
+    background-color: orange;
+    height: 50px;
+    width: 50px;
+    margin: 10px;
+    &:hover {
+      background-color: darkorange;
+    }
+  }
+}
+
+@media only screen and (min-width: $tablet-view) {
+  .navbar {
+    &__hidden {
+      display: block;
+    }
+    &__links {
+      position: relative;
+      top: 0;
+      display: flex;
+      flex-direction: row;
+      width: auto;
+      &__link {
+        width: 50px
+      }
+    }
+    &__burgerbutton {
+      display: none;
+    }
+  }
+}

@@ -1,0 +1,11 @@
+.footer {
+  width: 100vw;
+  background-color: black;
+  &__spacer {
+    flex-grow: 1;
+  }
+  &__body {
+    color: white;
+    text-align: center;
+  }
+}

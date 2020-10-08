@@ -1,9 +1,17 @@
-import React from 'react';
+import React from "react";
+
+import "./styles/main.scss";
+import Navbar from "./navbar/navbar";
+import ShopView from './shopview/shopview';
+import Footer from "./footer/footer";
 
 function App() {
   return (
     <div className="App">
-      hey now, you're an allstar
+      <Navbar />
+      <ShopView />
+      <div className='footer__spacer'></div>
+      <Footer />
     </div>
   );
 }

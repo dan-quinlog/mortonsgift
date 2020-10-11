@@ -16,23 +16,37 @@ export default class Navbar extends Component {
   closeNavBar() {
     this.setState({
       navlinks: false,
-    })
+    });
   }
   render() {
     return (
       <div className="navbar">
-        <div className="navbar__logo">logo</div>
+        <div className="navbar__logo">
+          <img
+            className="project__logo__image"
+            src="http://via.placeholder.com/150x50"
+          />
+        </div>
         <div className="navbar__spacer"></div>
         <div
           className={`navbar__links ${
             this.state.navlinks ? "" : "navbar__hidden"
           }`}
         >
-          <div className="navbar__links__link">link 1</div>
-          <div className="navbar__links__link">link 2</div>
+          <div className="navbar__links__link"><img
+            className="project__logo__image"
+            src="http://via.placeholder.com/150x50"
+          /></div>
+          <div className="navbar__links__link"><img
+            className="project__logo__image"
+            src="http://via.placeholder.com/150x50"
+          /></div>
         </div>
         <div className="navbar__burgerbutton" onClick={this.toggleNavBar}>
-          v
+          <img
+            className="project__logo__image"
+            src="http://via.placeholder.com/50x50"
+          />
         </div>
       </div>
     );

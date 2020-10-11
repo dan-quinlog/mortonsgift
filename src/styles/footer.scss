@@ -1,6 +1,8 @@
 .footer {
-  width: 100vw;
+  width: 100%;
   background-color: black;
+  position: sticky;
+  bottom: 0;
   &__spacer {
     flex-grow: 1;
   }

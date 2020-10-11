@@ -3,11 +3,10 @@
   justify-content: flex-end;
   background-color: black;
   height: 70px;
+  position: sticky;
+  top: 0;
 
   &__logo {
-    background-color: orange;
-    height: 50px;
-    width: 50px;
     margin: 10px;
   }
   &__spacer {
@@ -19,7 +18,7 @@
     left: 0px;
     display: flex;
     flex-direction: column;
-    width: 100vw;
+    width: 100%;
     background-color: black;
     &__link {
       height: 50px;
@@ -34,9 +33,6 @@
     display: none;
   }
   &__burgerbutton {
-    background-color: orange;
-    height: 50px;
-    width: 50px;
     margin: 10px;
     &:hover {
       background-color: darkorange;
@@ -56,7 +52,7 @@
       flex-direction: row;
       width: auto;
       &__link {
-        width: 50px
+        width: 150px
       }
     }
     &__burgerbutton {

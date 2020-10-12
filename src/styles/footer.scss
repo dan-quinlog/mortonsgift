@@ -6,8 +6,35 @@
   &__spacer {
     flex-grow: 1;
   }
-  &__body {
-    color: white;
-    text-align: center;
+  &__links {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    &__link {
+      background-color: white;
+      width: 25%;
+      margin: 5px;
+      font-size: 2em;
+      text-align: center;
+      &:hover {
+        background-color: whitesmoke;
+      }
+    }
+  }
+  &__c2a {
+    display: none;
+  }
+}
+
+@media only screen and (min-width: $tablet-view) {
+  .footer {
+    &__links {
+      display: none;
+    }
+    &__c2a {
+      display: block;
+      color: white;
+      text-align: center;
+    }
   }
 }
